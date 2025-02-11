@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DE3FB7EE2D5B24C4009871DB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DE3FB7ED2D5B24C4009871DB /* FirebaseAuth */; };
+		DE3FB7F02D5B24C4009871DB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DE3FB7EF2D5B24C4009871DB /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DE3FB7A62D5B23E4009871DB /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3FB7EE2D5B24C4009871DB /* FirebaseAuth in Frameworks */,
+				DE3FB7F02D5B24C4009871DB /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = ToDoList;
 			packageProductDependencies = (
+				DE3FB7ED2D5B24C4009871DB /* FirebaseAuth */,
+				DE3FB7EF2D5B24C4009871DB /* FirebaseFirestore */,
 			);
 			productName = ToDoList;
 			productReference = DE3FB7A62D5B23E4009871DB /* ToDoList.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = DE3FB79D2D5B23E4009871DB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DE3FB7EC2D5B24C4009871DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DE3FB7A72D5B23E4009871DB /* Products */;
 			projectDirPath = "";
@@ -255,6 +267,7 @@
 				DEVELOPMENT_TEAM = 6AVVMQL94A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDoList;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +297,7 @@
 				DEVELOPMENT_TEAM = 6AVVMQL94A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ToDoList;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +338,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE3FB7EC2D5B24C4009871DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE3FB7ED2D5B24C4009871DB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE3FB7EC2D5B24C4009871DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DE3FB7EF2D5B24C4009871DB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE3FB7EC2D5B24C4009871DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE3FB79E2D5B23E4009871DB /* Project object */;
 }
